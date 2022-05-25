@@ -1,0 +1,923 @@
+@font-face {
+    font-family: 'LeelawUI';
+    src: url('fonts/LeelawUI.ttf');
+  }
+  @font-face {
+    font-family: Courier;
+    src: url('fonts/cour.ttf');
+  }
+  body{
+    font-family: LeelawUI;
+  }
+  .team-names{
+    max-width: 140px!important;
+    color:#363434!important;
+    text-overflow: ellipsis!important;
+      content: ""!important;
+      position:relative!important;
+      overflow: hidden;
+      white-space: nowrap;
+      padding-top:12px;
+      line-height: 46px;
+      font-weight: 300;
+      border-right: 1px solid #b4b4b4;
+  
+  }
+  .col-md-8:last-child{
+    border-right:3px solid #1F211E;
+  }
+  
+  .team-search{
+    border:0px!important;
+    background-color: #1F211E!important;
+    border-bottom: 2px solid #1F211E!important;
+    border-radius: 0px!important;
+    background:url('images/arrow.png') no-repeat right!important;
+    background-size: 16px 16px!important;
+    font-family: LeelawUI;
+    font-size: 16px!important;
+    font-weight: 300!important;
+  
+  }
+  .team-search::placeholder{
+    color:#1F211E!important;
+    opacity: 100%!important;
+    font-size: 16px!important;
+    font-weight: 300!important;
+  }
+  .team-search:focus, .team-search:active, .team-search:hover{
+    color:#1F211E!important;
+
+  }
+  
+  
+  .level{
+    margin-top:10px;
+    text-align: center;
+    color:yellow
+  }
+  
+  
+  .logo{
+    text-align: left;
+    margin-bottom:45px;
+    z-index:998;
+  }
+  .logo img{
+    width:160px;
+  }
+  
+  .side{
+    height:835px;
+    overflow: hidden;
+  }
+  
+  .side-right{
+    height:835px;
+    padding-left: 4px!important;
+    overflow: scroll!important;
+  }
+  
+  
+  .sports{
+    text-align: center;
+    margin-top:30px;
+    margin-left:15px!important;
+  }
+  .prod{
+    color:#363434;
+    text-align: center;
+  }
+  
+  .sportIcon{
+    width:15px;
+    margin-left:5px;
+    margin-top:-2px
+  }
+  .sportsList{
+    color:white;
+    margin-top:8px
+  }
+  .league-and-date{
+    color:#363434;
+    padding:14px;
+    line-height:42px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right:8px;
+  }
+  .basicOddsDataLeft{
+    padding-right: 17px;
+  }
+  .basicOddsHeader .basicOdds .col-md-3-half{
+    padding-left:20px;
+    color:#8EA712!important;
+  }
+  .fa-plus{
+    padding-left:6px!important
+  }
+  .thumb img{
+    width:140%;
+    height:10 0%;
+  }
+  .basicOdds, .basicOddsGoals{
+    color:#85a000;
+    font-size:20px;
+    font-family: LeelawUI;
+      text-transform: uppercase;
+      font-weight: bold;
+    /* border-right:1px solid white;
+    border-top:1px solid white; */
+    /* border-bottom:1px solid white */
+  }
+  .basicOdds:nth-child(1), .basicOdds:nth-child(2){
+    text-align: left;
+    
+  }
+  .basicOdds:nth-child(1){
+    /* border-left:1px solid white */
+  }
+  
+  
+  
+  .real,.betradar,.feed{
+    color:#363434!important;
+    padding-left:0px!important;
+    padding-right:0px!important;
+    text-align: center;
+  }
+  .plus{
+    color:#8EA712;
+    line-height: 38px;
+  }
+  .additionalOdds{
+    color:#7b9111!important;
+   /* background: black; 
+    border:2px solid white*/
+    margin-top:55px;
+    font-family: LeelawUI;
+    text-transform: uppercase;
+    
+  }
+  .additionalOdds thead th{
+    background-color: #E7E7E7;
+    font-weight: 400!important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  .additionalOdds thead{
+    font-size: 18px;
+    
+    
+  }
+  .additionalOdds tr:nth-child(2){
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100px;
+    
+  }
+  .fa-plus{
+    margin-left:30%
+  }
+  
+  .fa{
+    cursor:pointer
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  #skriveni li{
+    list-style-type: auto!important;
+  }
+  
+  .groupName{
+    color:yellow;
+    padding-left:3%;
+    font-size:20px
+  }
+  .table{
+    margin-bottom:0px!important;
+  }
+  .cellData{
+    text-align: right;
+  }
+  
+  .real{
+    color:yellowgreen;
+    /* padding-left:24%!important */
+  }
+  
+  /* .feed{
+    padding-left:24%!important
+  } */
+  
+  .prod, .feed, .betradar{
+    font-weight:300;
+  }
+  .prod{
+    font-size:18px;
+    font-weight: 400;
+  }
+  
+  .basicOddsHeader, .basicOddsHeaderRight{
+    text-align: center;
+    top:0px;
+    z-index: 10;
+    padding-bottom: 10px;
+    padding-top:10px;
+    background:#e7e7e7;
+    z-index:1;
+    position:sticky;
+    border-top: 1px solid #b6b6b6;
+    border-bottom: 1px solid #b6b6b6;
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+
+    box-shadow: 0px 0px 7px #bbbbbb;
+
+  }
+  
+  .basicOddsHeader{
+    padding-left:0px!important;
+    margin-right:0px!important;
+    margin-left:10px!important;
+    padding-bottom:4px!important;
+    margin-bottom: 1px;
+  
+  }
+  
+  .badOdds{
+    padding-left:10px;
+  }
+  
+  .table thead th{
+    vertical-align: baseline!important;
+  }
+  
+  .table td, .table th {
+  border-top:3px solid #999999!important;
+  
+  }
+  .mec{
+    cursor: pointer;
+  }
+  .mec:nth-child(even), .igre:nth-child(even){
+    /* background:black */
+    background-color: #e7e7e7;
+  }
+  .mec:nth-child(odd), .igre:nth-child(odd){
+    background-color:#e7e7e7;
+  }
+  .mec:nth-child(2){
+    background:#e7e7e7;
+  
+  }
+  .mec{
+    background-color: #30342F;
+    margin:5px;
+    padding-right: 5px;
+  }
+  .mec:hover{
+      background:#FAFAFA;
+  }
+  
+  .pera{
+    height: 83vh!important;
+    padding-left: 15px;
+    padding-right: 5px;
+    width:101.5%!important;
+    margin-left:0px!important;
+  }
+  
+  .right-data{
+    overflow: scroll;
+    height: 83vh;
+    padding-left: 15px;
+  }
+  
+  .side-right::-webkit-scrollbar-track, .hiddenMatches::-webkit-scrollbar-track, .pera::-webkit-scrollbar-track
+  {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1)!important;
+      background-color: #b4b4b4!important;
+    
+      /* border-radius: 10px; */
+  }
+  
+  .side-right::-webkit-scrollbar,.hiddenMatches::-webkit-scrollbar, .pera::-webkit-scrollbar
+  {
+      width: 10px!important;
+      background-color: rgba(0,0,0,0.9)!important;
+    /* border-radius: 10px; */
+  }
+  
+  .side-right::-webkit-scrollbar-thumb,.hiddenMatches::-webkit-scrollbar-thumb, .pera::-webkit-scrollbar-thumb
+  {
+      /* border-radius: 10px; */
+      background-color: #8EA712!important;
+    height: 50px!important;
+  
+   /*	background-image: -webkit-gradient(linear,
+                                         40% 0%,
+                                         75% 84%,
+                                         from(#4D9C41),
+                                         to(#19911D),
+                                         color-stop(.6,#54DE5D))!important  */
+  }
+  
+  .bela{
+    color:#363434;
+    border-left:1px solid #b4b4b4;
+    border-right:1px solid #b4b4b4;
+  }
+  
+  .negmar{
+    margin:0px auto; 
+
+  }
+  
+  
+  .alignRows, .payoutGoals{
+    padding-top:12px;
+    line-height: 34px;
+  }
+  .prod:nth-child(){
+    padding-top: 30%!important;
+  }
+  .payoutGoals{
+    margin-top:-11px;
+    line-height: 23px;
+  }
+  
+  .nepovezaniText{
+    color:#85a000;
+    font-size:21px;
+    margin-top:10px;
+    font-weight: regular;
+    font-family:LeelawUI;
+    font-style: italic;
+  }
+  
+  .mtop10{
+    margin-top:15px!important;
+  }
+  
+  .meceviHeader{
+    color:#363434!important; font-size:21px!important; margin-top:4px!important; font-weight: bold!important;
+  }
+  
+  .sort{
+    margin-bottom:20px!important; 
+    color:#1f211e!important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:16px!important;
+    font-weight: 400!important;
+  }
+  .sort *{
+    background-color:#b9b9b9;
+  }
+  .form-control:focus{
+    outline: none!important;
+    box-shadow: none!important;
+  }
+  select:focus{
+    background-color:#1F211E;
+  
+  }
+  
+  .teamLinks{
+    text-decoration:none!important; color:#363434!important
+  }
+  
+  .teamLinks:hover{
+    text-decoration:underline!important;
+  }
+  
+  .mainTeamLinks{
+    margin-bottom:3px!important;
+    text-decoration: none!important;
+  }
+  
+  .firstSportsList{
+    max-width: 50px!important;
+    -webkit-backface-visibility: hidden; 
+    -ms-transform: translateZ(0); /* IE 9 */
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+  }
+  .firstSportsList:hover{
+    transform: scale(1.2);
+  }
+  
+  .secondSportsList img{
+    padding-top: 8px!important
+  }
+  
+  .secondSportsList{
+    max-width: 30px!important
+  }
+  
+  .thirdSportsList{
+    position:absolute;
+    right:-1270px;
+    top:-12px;
+    font-size: 16px;
+    color:#363434;
+    font-family: LeelawUI;
+  }
+  
+  .thirdSportsList p{
+    padding-top: 20px!important; padding-left: 5px!important;
+  }
+  
+  .reload{
+    max-height: 10px!important; max-width: 220px!important;
+    position:absolute;
+    right:-1020px;
+    top:-15px;
+    padding-top: -22px;
+    color:rgb(117, 117, 117);
+    font-size:16px!important;
+  }
+  
+  .pretragaTipa{
+    width: 80% !important;
+  }
+  .pretragaTipa, input[type=text]{
+    background-color:#E7E7E7 ;
+    color: #363434!important;
+    border:none;
+    border-bottom: 2px solid #363434;
+    border-radius: 0%;
+    padding-right: 0px;
+  }
+  .pretragaTipa, input[type=text]::placeholder{
+    color:#363434;
+    box-shadow:0px!important;
+    font-family:LeelawUI;
+    font-style: italic;
+  
+  }
+  .pretragaTipa, input[type=text]:active, .pretragaTipa, input[type=text]:focus{
+    background-color: #E7E7E7;
+    border-bottom: 2px solid #363434!important;
+    font-style: normal;
+  }
+  .fa-window-close{
+    float: right!important; margin-top: -9%!important;
+    margin-right:10px;
+  }
+  
+  .ring{
+    transform: scale(0.79)!important
+  }
+  
+  #miniLoadingBar img{
+    margin-left: -35px;
+      margin-top: -5px;
+  }
+  
+  .removeMatch{
+    color:#EC4949;
+    padding-left:11px
+  }
+  
+  .eye{
+    margin-top:5%!important;
+    margin-left:32%!important
+  }
+  
+  .hiddenMatches {
+    position: absolute;
+    left: 0;
+    width: 100%!important;
+    height: 240px;
+    padding: 20px;
+    margin-top: 10px;
+    /* transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94); */
+    overflow: scroll;
+    box-sizing: border-box;
+      
+    }
+  
+  
+    .nazad{
+      padding-left:5px;
+      cursor: pointer;
+      margin-top:33px;
+    }
+   
+    .sakriveni{
+      color:#363434;
+      font-size:25px!important;
+      margin-top:8px
+    }
+  
+    .lightbox {
+      /* Default to hidden */
+      display: none;
+    
+      /* Overlay entire screen */
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      
+      /* A bit of padding around image */
+      padding: 1em;
+    
+      /* Translucent background */
+      background: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Unhide the lightbox when it's the target */
+    .lightbox:target {
+      display: flex;
+    }
+    
+    .lightbox div {
+      /* Full width and height */
+      display: flex;
+      width: 100%;
+      height: 100%;
+      /* justify-content: center;
+      align-items: center; */
+      /* Size and position background image */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      flex-direction:column;
+    }
+  
+    .numberOfHidden{
+      color:#363434;
+      padding-left:5px;
+      padding-top:-5px;
+    }
+  
+    #sakriveniTabela, #sakriveniTabela table{
+      color:#363434
+    }
+  
+    #zaglavlja th:nth-child(5){
+      display: none!important;
+    }
+  
+    #zaglavlja th{
+      border-right: 2px solid #363434;
+    }
+    
+    #zaglavlja th:first-child{
+      border-left:2px solid #363434;
+    }
+  
+    .zaglavljaKvota th{
+      border:none!important;
+      text-align:center;
+      font-size:12px;
+      padding:0px!important;
+      padding-left:3px!important
+    }
+  
+    #redovi{
+      border-bottom: 2px solid yellow!important;
+    }
+  
+    #redovi td{
+      padding:2px!important
+    }
+  
+    #zaglavlja{
+      color:yellow;
+    }
+  
+    #zaglavlja th:nth-child(4),#zaglavlja th:nth-child(6){
+      text-align: center;
+    }
+  
+    .hiddenTeamName{
+      width:12%!important;
+    }
+  
+    .hiddenData, .hiddenDataNew{
+      text-align: center!important;
+    }
+  
+    .hiddenNew{
+      color:red;
+      background-color: #363434;
+    }
+  
+    .mtop25{
+      margin-top:10px!important;
+      margin-left: -23px!important;
+    }
+  
+    .spinner{
+      margin-top:15px
+    }
+  
+    .suggestionsList{
+      background: #89cf48;
+      text-align: center;
+      border-radius: 7px;
+      width:45px;
+      margin-left: -5px;
+    }
+    .suggestionsList2{
+      background: #363434;
+      text-align: center;
+      border-radius: 8px;
+      width:60px;
+      margin-left: -5px;
+    }
+    .suggestionsList:focus{
+      background-color: #89cf48!important;
+      outline:none!important;
+    }
+    .suggestionsList *{
+      background-color: #89cf48;
+    }
+    .highlight{
+      background:#dae0da!important
+    }
+  
+    .teamLiga{
+      font-style:italic!important;
+    }
+  
+    .kr{
+      font-style: italic;
+    }
+  
+    .v-context{
+      text-align: center!important;
+      padding-left:0px!important;
+      min-width: 0px!important;
+    }
+  
+    .contextIcon{
+      padding-bottom: 2px;
+    }
+  
+  /* .sports > .firstSportsList{
+    position: relative;
+  }
+  
+  .sports > .firstSportsList ~ .firstSportsList{
+    position:static;
+  } */
+  
+  .fudbal{
+    position: relative;
+  }
+  
+  .matchCount{
+    color: white;
+      position: absolute;
+      left: 62px;
+      background: #EC4949;
+      padding: 3px;
+      margin-top: 86px;
+      border-radius: 3px;
+  
+  }
+  
+  .defaultLabel{
+    color:#363434;
+  }
+  
+  .multiselect {
+    width: 200px;
+    position: absolute;
+      z-index: 2;
+  }
+  
+  .selectBox {
+    position: relative;
+  }
+  
+  .selectBox select {
+    background:#fafafa!important;
+    color:#1F211E!important;
+    width: 100%;
+    font-size: 16px!important;
+    font-weight: 400!important;
+    border:0px;
+    border-bottom: 2px solid #1F211E;
+    border-radius: 0px;
+  }
+  .selectBox option{
+    color:#1F211E!important;
+  }
+  .sort *:hover
+  {
+      background-color: #8ca396!important;
+  }
+  
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  #checkboxes{
+    display: none;
+    border: 1px #c0c0c0 solid;
+    background-color: rgba(52, 53, 51, 0.9)!important;
+    color:#CECECE;
+      width: 100%;
+      overflow: scroll;
+      max-height: 400px;
+      padding-left: 7px;
+      font-size: 14px;
+      font-family: LeelawUI;
+  }
+  
+  #checkboxes label {
+    display: block;
+  }
+  
+  #checkboxes label:hover {
+    background-color: #B7CE43;
+    color:#000;
+  }
+  
+  .ligaSelect{
+    border-radius: 6px;
+      margin-left:10px;
+  }
+  
+  .wht{
+    color:white!important
+  }
+  
+  #checkboxes::-webkit-scrollbar-track, .hiddenMatches::-webkit-scrollbar-track
+  {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+      background-color: rgba(0,0,0,0.9);
+      /* border-radius: 10px; */
+  }
+  
+  #checkboxes::-webkit-scrollbar,.hiddenMatches::-webkit-scrollbar
+  {
+      width: 11px;
+      background-color: rgba(0,0,0,0.9);
+    /* border-radius: 10px; */
+  }
+  
+  #checkboxes::-webkit-scrollbar-thumb, .hiddenMatches::-webkit-scrollbar-thumb
+  {
+      /* border-radius: 10px; */
+      background-color: #788f13;
+      /*background-image: -webkit-gradient(linear,
+                                         40% 0%,
+                                         75% 84%,
+                                         from(#4D9C41),
+                                         to(#19911D),
+                                         color-stop(.6,#54DE5D))*/
+  }
+  
+  .all--liga {
+    position: absolute;
+    left: 185px;
+    bottom: 5px;
+    z-index: 2;
+  }
+  
+  .ligaLoader{
+    position: absolute;
+      left: 220px;
+      bottom: 22px;
+      z-index: 1;
+  }
+  
+  .all--liga .v-icon, 
+  .all--liga .primary--text
+   {
+    color: #8EA712 !important;
+    caret-color:#8EA712 !important;
+  }
+  
+  .monitoring.v-application .primary--text{
+    color:#8EA712!important;
+    caret-color:#8EA712!important
+  }
+  
+  .col-md-1-half{
+    width: 13.8888888833!important;
+      flex: 0 0 13.88%!important;
+      max-width: 15.88%!important;
+      margin-left:4px;
+      margin-right: 8px;
+  }
+  
+  .basicOdds{
+    padding-left:38px!important;
+  }
+  .col-md-3-half{
+    width: 33.33%!important;
+    flex: 0 0 26.33%!important;
+    max-width: 22.33%!important;
+  
+  }
+  .form-control:focus{
+    -webkit-box-shadow: none;
+   
+    outline-width: 0px!important;
+    border-left: 0px!important;
+  }
+  .bela .row{
+    margin-left:-23px;
+    box-sizing: border-box;
+    margin-top:18px;
+    line-height: 21px;
+  
+  }
+  .bela .row:first-child{
+    padding-bottom: 32px!important;
+  }
+  .bela .row:last-child{
+    margin-bottom:-10px!important;
+  }
+  .row .col-md-12 .prod{
+    color: #1f211e!important;
+    font-size:34px!important;
+  }
+  .team-names a:hover{
+    text-decoration:none!important;
+  }
+  .row .nulta{
+    padding-bottom: 4px;
+  }
+  .plus{
+    margin-right:0px!important;
+  }
+  .mec .right-row{
+    margin-left: 20px!important;
+  }
+  .mec .right-row .col-md-1{
+    padding-left: 0px!important;
+  }
+  .pulse {
+    width: 20px;
+    height: 32px;
+    border-radius:0%;
+    margin-bottom:2px;
+    background: #cc2c2c;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    transform:scale(1.1);
+    font-weight: bold;
+  }
+  .pulse:hover {
+    animation: none;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-color: rgb(252, 72, 72)(211, 38, 38);
+    } 
+  }
+  @keyframes pulse {
+    0% {
+       color:#ffdfdf;
+      }
+  }
+  .desno{
+    padding-left: 6px!important;
+    padding-top:14px;
+  }
+  .payoutGoals:last-child{
+    padding-top:26px;
+    border:0px;
+  }
+  .container-fluid{
+    background-color: #fafafa!important;
+  }
+
+  .row.mec{
+    border:1px solid #b4b4b4;
+    border-left:none;
+    box-shadow: 0px 0px 3px #ffffff;
+  }
+  .col-md-3, .col-md-6:nth-last-child(0){
+      color:#363434!important;
+  }
+  .row.mec.no-data{
+    color:rgb(14, 14, 14);
+}
+.match{
+    color:#8EA712!important;
+}
+.igre{
+    border-top:1px solid #1F211E!important;
+}
+
+.v-main{
+    background: #FAFAFA!important;
+}
